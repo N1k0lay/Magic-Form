@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="index.html" id="form-link">Form</a>
+    <a href="history.html" id="history-link">History</a>
+</nav>
+<div class="container">
+    <form class="form">
+        <label for="first-name">First name</label>
+        <input type="text" name="first-name" id="first-name" value='' oninput="updateLocalStorage()"/>
+
+        <label for="last-name">Last name</label>
+        <input type="text" name="last-name" id="last-name" oninput="updateLocalStorage()"/>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" oninput="updateLocalStorage()"/>
+
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" oninput="updateLocalStorage()"/>
+
+        <label for="company">Company</label>
+        <input type="text" name="company" id="company" oninput="updateLocalStorage()"/>
+
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" oninput="updateLocalStorage()"/>
+
+        <button id="submit-button" onclick="submitForm()">Submit form</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

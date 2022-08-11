@@ -1,0 +1,49 @@
+body {
+	display: grid;
+	grid-template: auto 1fr auto / auto minmax(320px, 1200px) auto;
+	grid-template-areas:
+			"header header header"
+			". container .";
+	margin: 0 auto;
+	padding: 0;
+	background-color: aliceblue;
+}
+
+nav {
+	grid-area: header;
+	background-color: black;
+	color: white;
+	height: 40px;
+	margin-bottom: 20px;
+}
+
+nav a {
+	color: white;
+}
+
+.container {
+	grid-area: container;
+}
+
+.form label, .form input {
+	display: block;
+	width: 99vw;
+}
+
+.form label {
+	margin-bottom: 5px;
+}
+.form input {
+	font-size: 20px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.submit-history-card {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.31);
+}
